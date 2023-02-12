@@ -1,8 +1,8 @@
 ﻿Console.Write("Введите первое число: ");
-int numberOne = Convert.ToInt32(Console.ReadLine());
+double numberOne = Convert.ToDouble(Console.ReadLine()); // Заменил int на double для расширения возможностей
 Console.Write("Введите первое число: ");
-int numberTwo = Convert.ToInt32(Console.ReadLine());
-int sqrTwo = numberTwo * numberTwo;
+double numberTwo = Convert.ToDouble(Console.ReadLine());
+double sqrTwo = numberTwo * numberTwo;
 if (sqrTwo == numberOne)
 {
 	Console.WriteLine("Да, первое число является квадратом второго");
