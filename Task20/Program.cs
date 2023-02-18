@@ -9,9 +9,8 @@ int Promt(string massege)
 double Distance(int xa, int ya, int xb, int yb)
 {
 	int square = ((xa - xb) * (xa - xb)) + ((ya - yb) * (ya - yb));
-	double root = Math.Sqrt(square);
-	double remainder = Math.Round(root, 2, MidpointRounding.ToZero);
-	return remainder;
+	double result = Math.Sqrt(square);
+	return result;
 }
 
 
@@ -20,4 +19,5 @@ int pointAX = Promt("Введите координату X точки А: ");
 int pointAY = Promt("Введите координату Y точки А: ");
 int pointBX = Promt("Введите координату X точки B: ");
 int pointBY = Promt("Введите координату Y точки B: ");
-Console.WriteLine($"Расстояние между точками А и В = {Distance(pointAX, pointAY, pointBX, pointBY)}");
+double root = Distance(pointAX, pointAY, pointBX, pointBY);
+Console.WriteLine($"Расстояние между точками А и В = {Math.Round(root, 2, MidpointRounding.ToZero)}");
