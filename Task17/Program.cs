@@ -9,8 +9,8 @@ int Promt(string massege)
 int Quarter(int pointX, int pointY)
 {
 	if (pointX > 0 && pointY > 0) return 1;
-	if (pointX < 0 && pointY < 0) return 3;
 	if (pointX < 0 && pointY > 0) return 2;
+	if (pointX < 0 && pointY < 0) return 3;
 	if (pointX > 0 && pointY < 0) return 4;
 	else return 0;
 }

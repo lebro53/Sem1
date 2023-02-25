@@ -17,11 +17,13 @@ int[] NewArray(int num, int min, int max)
 }
 void PrintArray(int[] arr)
 {
-	Console.Write($"Получинный массив из {arr.Length} элементов = ");
+	Console.Write($"Получинный массив из {arr.Length} элементов = [");
 	for (int i = 0; i < arr.Length; i++)
 	{
-		Console.Write($"{arr[i]} ");
+		Console.Write($"{arr[i]}");
+		if (i < arr.Length - 1) Console.Write(", ");
 	}
+	Console.WriteLine("]");
 }
 
 
