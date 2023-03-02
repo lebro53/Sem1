@@ -13,7 +13,7 @@ int Promt(string massege)
 	return result;
 
 }
-int[] CreateArray(int num, int num1, int num2)
+int[] CreateFibonachiArray(int num, int num1, int num2)
 {
 	int[] array = new int[num];
 	array[0] = num1;
@@ -38,6 +38,6 @@ void PrintArray(int[] array)
 int size = Promt("Введите размер массива: ");
 int numberOne = 0;
 int numberTwo = 1;
-int[] arr = CreateArray(size, numberOne, numberTwo);
+int[] arr = CreateFibonachiArray(size, numberOne, numberTwo);
 Console.Clear();
 PrintArray(arr);
