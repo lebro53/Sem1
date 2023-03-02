@@ -31,22 +31,24 @@ void PrintArray(int[] array)
 		else Console.Write($"{array[i]}]");
 	}
 }
-void PrintQuantEvenElemArray(int[] array)
+int PrintQuantEvenElemArray(int[] array)
 {
 	int count = 0;
 	for (int i = 0; i < array.Length; i++)
 	{
 		if (array[i] % 2 == 0) count += 1;
 	}
-	Console.Write($"Количество четных чисел в массиве = {count}");
+	return count;
 }
 
 // Program body--------------------------------------------
 int size = Promt("Введите размер массива: ");
-int minNumberArray = Promt("Введите начало массива: ");
-int maxNumberArray = Promt("Введите конец массива: ");
+int minNumberArray = 100;
+int maxNumberArray = 999;
 int[] arr = CreateArray(size, minNumberArray, maxNumberArray);
 Console.Clear();
 PrintArray(arr);
 Console.Write(" -> ");
-PrintQuantEvenElemArray(arr);
+
+int quantEven = PrintQuantEvenElemArray(arr);
+Console.Write($"Количество четных чисел в массиве = {quantEven}");

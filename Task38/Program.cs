@@ -58,4 +58,4 @@ double[] arr = CreateArray(size, minNumberArray, maxNumberArray);
 Console.Clear();
 PrintArray(arr);
 double difMaxMinElemArray = MaxElemArray(arr) - MinElemArray(arr);
-Console.WriteLine($"Разница между максимальным и минимальным элементом массива = {difMaxMinElemArray} ");
+Console.WriteLine($"Разница между максимальным и минимальным элементом массива = {Math.Round(difMaxMinElemArray, 2, MidpointRounding.ToZero)} ");

@@ -31,8 +31,8 @@ void PrintArray(int[] array)
 		else Console.Write($"{array[i]}]");
 	}
 }
-int[] SwapElemArray(int[] array)
-{
+int[] SwapElemArray(int[] array)          //Сделал через тип данных int для более красивого выводы на экран (как в примере)
+{                                         //Тип void нельзя преобразовать в int, следовательно конструкция как в примере не получится.
 	for (int i = 0; i < array.Length; i++)
 	{
 		array[i] *= -1;

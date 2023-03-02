@@ -34,25 +34,16 @@ void PrintArray(int[] array)
 }
 int[] CreateNewArray(int num, int[] array)
 {
-	if (num % 2 == 0)
+	int size = num / 2;
+	if (num % 2 != 0) size = num / 2 + 1;
+	int[] newArray = new int[size];
+	for (int i = 0; i < newArray.Length; i++)
 	{
-		int[] newArray = new int[num / 2];
-		for (int i = 0; i < newArray.Length; i++)
-		{
-			newArray[i] = array[i] * array[array.Length - 1 - i];
-		}
-		return newArray;
+		newArray[i] = array[i] * array[array.Length - 1 - i];
 	}
-	else
-	{
-		int[] newArray = new int[num / 2 + 1];
-		for (int i = 0; i < newArray.Length; i++)
-		{
-			newArray[i] = array[i] * array[array.Length - 1 - i];
-		}
-		newArray[newArray.Length - 1] = array[array.Length / 2];
-		return newArray;
-	}
+	newArray[newArray.Length - 1] = array[array.Length / 2];
+	return newArray;
+
 }
 
 // Program body--------------------------------------------
