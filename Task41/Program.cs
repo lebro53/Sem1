@@ -10,7 +10,6 @@ int Promt(string massege)
 	string value = Console.ReadLine();
 	int result = Convert.ToInt32(value);
 	return result;
-
 }
 int[] CreateArray(int num)
 {
