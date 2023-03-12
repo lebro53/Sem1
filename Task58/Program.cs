@@ -65,8 +65,8 @@ int[,] MultiplicationMatrix(int[,] matrix1, int[,] matrix2)
 
 
 // Program body--------------------------------------------
-int[,] firstMatrix = CreateMatrixArrayInt(2, 3, 1, 6);
-int[,] secondMAtrix = CreateMatrixArrayInt(3, 2, 1, 7);
+int[,] firstMatrix = CreateMatrixArrayInt(1, 1, 1, 6);
+int[,] secondMAtrix = CreateMatrixArrayInt(1, 1, 1, 7);
 int[,] newMatrix = MultiplicationMatrix(firstMatrix, secondMAtrix);
 Console.Clear();
 PrintMatrix(firstMatrix);
